@@ -14,3 +14,5 @@ Imports:
     magrittr
 Suggests: 
     tidyverse
+URL: https://github.com/ChristopherNClark/hpsrn
+BugReports: https://github.com/ChristopherNClark/hpsrn/issues
