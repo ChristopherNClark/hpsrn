@@ -1,10 +1,21 @@
 Package: hpsrn
-Title: What the Package Does (One Line, Title Case)
+Title: This tests the functionality of developing an R Data Package
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    c(person(given = "Prasad",
+           family = "Bhoite",
+           role = c("aut", "cre"),
+           email = "pbhoite@fiu.edu",
+           comment = c(ORCID = "0000-0003-2548-0066")),
+    person(given = "Christopher",
+           family = "Clark",
+           role = "aut",
+           email = "chrclark@fiu.edu"),
+    person(given = "Krupa",
+           family = "Patel",
+           role = "aut",
+           email = "krpatel@fiu.edu"))
+Description: This package provides each round of Household Pulse Survey data and respective codebooks in an easily accessible manner. Raw data sets of Household Pulse Survey data [Public Use Files] can be accessed at the US Census Website.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
