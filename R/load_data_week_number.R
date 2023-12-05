@@ -13,10 +13,12 @@
 #' }
 load_data_week_number <- function(week) {
   stopifnot(week %in% c(1, 2))
-  # Construct file path using here::here
+  # Construct the GitHub raw file URL
   file_name <- paste0("HPS_week", week, "_data_parquet.parquet")
-  file_path <- here::here("data-raw", file_name)
-  # Read data using arrow::read_parquet
-  data <- arrow::read_parquet(file_path)
+  github_url <- paste0("https://github.com/ChristopherNClark/hpsrn/raw/master/data-raw/", file_name)
+  # Download the file using arrow::read_parquet
+  data <- arrow::read_parquet(github_url)
+
   return(data)
 }
+
